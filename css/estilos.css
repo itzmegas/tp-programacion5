@@ -1,0 +1,27 @@
+﻿body{
+
+}
+#titulos h5 {
+    display: inline;
+}
+#sizeLeterSidebar{
+    font-size:14px;
+}
+#pFecha{
+    font-size:13px;
+    color: dimgray;
+}
+.aside {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 0px;
+    background: white;
+}
+.section{
+    position: relative;
+    margin: 0px 0px 0px 303px;
+    width: 1233px;
+    height: 500px;
+    background: #ffffff;
+}

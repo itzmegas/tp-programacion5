@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="webMaster.Master.cs" Inherits="cv_emmanuel.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/bootstrap.min.js"></script>
+    <title>Curriculum Vitae</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Curriculum Vitae</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.aspx">Presentación <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experienciaLaboral.aspx">Experiencia Laboral</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formacion.aspx">Formación</a>
+                </li>
+            </ul>
+           <%-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>--%>
+        </div>
+    </nav>
+    <aside class="aside">
+        <div class="card" style="width: 19rem;">
+            <img src="img/fotocv.png" class="card-img-top" alt="fotocv">
+            <div class="card-body">
+                <h5 class="card-title">Emmanuel Gonzalez</h5>
+                <p id="sizeLeterSidebar" class="card-text">Edad: 28<br />
+                                     Teléfono: 1127266224<br />
+                                     Email: ggonzalez.emmanuel@gmail.com<br />
+                                     Dirección: Miralla 3179<br />
+                                     Localidad: CABA
+                </p>
+                <a href="docs/CV.pdf" class="card-link">Descargar cv en pdf</a>
+           <%--<a href="#" class="btn btn-primary">Go somewhere</a>      
+           <a href="#" class="card-link">Another link</a>--%>
+        </div>
+    </div>
+  </aside>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
